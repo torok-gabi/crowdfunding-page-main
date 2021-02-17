@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+.header {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    width: 100vw;
+    height: auto;
+    font-family: 'DM Serif Display', serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem .5rem;
+}
+
+.nav-menu,
+.hamburger.active,
+.close,
+.navbar-list {
+    display: none;
+}
+
+.hamburger,
+.close.active {
+    display: flex;
+    width: 10%;
+    justify-content: flex-end;
+}
+
+.nav-menu.active {
+    width: 100%;
+    height: 70vh;
+    background-color: hsl(270, 9%, 17%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 2rem;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    z-index: 1;
+}
+
+li:hover {
+    background-color: hsl(0, 0%, 98%);
+}
+
+.border {
+    border: 1px solid hsl(0, 0%, 98%);
+}
+
+.nav-item {
+    color: hsl(0, 0%, 98%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 1.1px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    color: hsl(270, 9%, 17%);
+    text-decoration: none;
+}
+
+.nav-pattern {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .nav-pattern {
+        width: 100%;
+        height: 40%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-list {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    li {
+        list-style: none;
+        padding: 1rem 2rem;
+        margin: 0 0.5rem;
+    }
+    .border {
+        border: 2px solid hsl(270, 9%, 17%);
+    }
+    li:hover {
+        background-color: hsl(270, 9%, 17%);
+        cursor: pointer;
+    }
+    .nav-item {
+        color: hsl(270, 9%, 17%);
+        text-decoration: none;
+    }
+    .nav-item:hover {
+        color: hsl(0, 0%, 98%);
+    }
+    .hamburger,
+    .hamburger-icon,
+    .close,
+    .close-icon,
+    .nav-menu,
+    .nav-menu.active,
+    .nav-pattern {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+}
