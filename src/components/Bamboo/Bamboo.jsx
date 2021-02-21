@@ -19,6 +19,15 @@ const Bamboo = () => {
                     <img src={bookmark} alt=""/>
                 </div>
             </section>
+            <section className="amount-container">
+                <h2>$89,914</h2>
+                <p>of $100,000 backed</p>
+                <h2>5,007</h2>
+                <p>total backers</p>
+                <h2>56</h2>
+                <p className="border-none">days left</p>
+                <span className="sideBar"></span>
+            </section>
         </main>
     )
 }
