@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import hamburger from "./icon-hamburger.svg";
 import close from "./icon-close-menu.svg";
 import logo from "./logo.svg";
@@ -6,13 +6,8 @@ import bgMobile from "./image-hero-mobile.jpg";
 import bgDesktop from "./image-hero-desktop.jpg";
 import "./header.scss";
 
-const Header = () => {
-
-    const [sidebar, setSidebar] = useState(false);
-
-    const clickHandler = () => {
-        setSidebar(!sidebar)
-    }
+const Header = ({sidebar, clickHandler}) => {
+    
     return (
         <header className="header">
             <img className="mobile-img" src={bgMobile} alt=""/>

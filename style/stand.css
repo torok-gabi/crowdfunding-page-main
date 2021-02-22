@@ -1,0 +1,42 @@
+.stand-container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stand-container .stand-content {
+  align-items: center;
+  width: 70%;
+  height: 45vh;
+  padding: 2rem;
+  border: 1px solid lightgray;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+.stand-container .stand-content div {
+  margin-bottom: 2rem;
+}
+.stand-container .stand-content .pledge {
+  color: #3cb4ac;
+}
+.stand-container .stand-content .stock {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.stand-container .stand-content .stand-btn {
+  background-color: #3cb4ac;
+  padding: 1.1rem 2rem;
+  border-radius: 2rem;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.stand-container .stand-content .stand-btn:hover {
+  background-color: #147b74;
+}
+.stand-container .stand-content .stand-btn:active,
+.stand-container .stand-content .stand-btn:focus {
+  outline: none;
+}
