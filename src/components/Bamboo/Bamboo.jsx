@@ -1,6 +1,5 @@
 import React from 'react';
 import bookmark from "./icon-bookmark.svg";
-import bookmarkBlue from "./icon-bookmark2.svg";
 import mastercraft from "./logo-mastercraft.svg";
 import "./bamboo.scss";
 
@@ -16,11 +15,10 @@ const Bamboo = ({sidebar, clickHandler}) => {
                     <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
                 </div>
                 <div className="button-container">
-                    <button className="btn" onClick={clickHandler}>Back this project</button>
-                    <img className={sidebar ? "black-bookmark active" : "black-bookmark"} src={bookmark} alt="bookmark img"/>
-                    <div className={sidebar ? "bookmark active" : "bookmark"}>
-                        <img src={bookmarkBlue} alt="bookmark img"/>
-                        <span>Bookmarked</span>
+                    <button className="btn">Back this project</button>
+                    <div className="bookmark-btn" onClick={clickHandler} >
+                        <img className={sidebar ? "bookmark-img active" : "bookmark-img"} src={bookmark}  alt="bookmark img"/>
+                        <span className={sidebar ? "bookmark active" : "bookmark"}>Bookmarked</span>
                     </div>
                 </div>
             </section>

@@ -25,29 +25,17 @@
   align-items: center;
   justify-content: space-evenly;
   margin-top: 3rem;
-}
-.main-container .button-container .bookmark,
-.main-container .button-container .black-bookmark.active {
-  display: none;
-}
-.main-container .button-container .bookmark.active {
-  display: flex;
-  align-items: center;
-}
-.main-container .button-container .bookmark.active img {
-  margin-right: 0.5rem;
-  color: #3cb4ac;
-}
-.main-container .button-container .bookmark.active span {
-  font-size: 0.7rem;
+  padding: 0 1rem;
 }
 .main-container .button-container .btn {
+  max-width: 50%;
   background-color: #3cb4ac;
   padding: 1.1rem 1.5rem;
   border-radius: 2rem;
   color: white;
   border: none;
   cursor: pointer;
+  font-size: 1rem;
 }
 .main-container .button-container .btn:active,
 .main-container .button-container .btn:focus {
@@ -55,6 +43,26 @@
 }
 .main-container .button-container .btn:hover {
   background-color: #147b74;
+}
+.main-container .button-container .bookmark-btn {
+  width: 50%;
+  display: flex;
+}
+.main-container .button-container .bookmark-btn img {
+  opacity: 0.7;
+}
+.main-container .button-container .bookmark-btn img.active {
+  opacity: 1;
+}
+.main-container .button-container .bookmark-btn .bookmark {
+  display: none;
+}
+.main-container .button-container .bookmark-btn .bookmark.active {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
+  color: #147b74;
+  font-size: 1rem;
 }
 .main-container .amount-container {
   width: 80%;
