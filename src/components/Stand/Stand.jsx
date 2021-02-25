@@ -1,7 +1,7 @@
 import React from 'react';
 import "./stand.scss";
 
-const Stand = () => {
+const Stand = ({clickSelect}) => {
     return (
         <div className="stand-container">
             <section className="stand-content">
@@ -15,7 +15,7 @@ const Stand = () => {
                 </div>
                 <div>
                     <p><span className="stock">101</span> left</p>
-                    <button className="stand-btn">Select Reward</button>
+                    <button onClick={clickSelect} className="stand-btn">Select Reward</button>
                 </div>
             </section>
             <section className="stand-content">
@@ -29,10 +29,10 @@ const Stand = () => {
                 </div>
                 <div>
                     <p><span className="stock">64</span> left</p>
-                    <button className="stand-btn">Select Reward</button>
+                    <button onClick={clickSelect} className="stand-btn">Select Reward</button>
                 </div>
             </section>
-            <section className="stand-content">
+            <section className="stand-content mahogany">
                 <div>
                     <h4>Mahogany Special Edition</h4>
                     <p className="pledge">Pledge $200 or more</p>
@@ -43,7 +43,7 @@ const Stand = () => {
                 </div>
                 <div>
                     <p><span className="stock">0</span> left</p>
-                    <button className="stand-btn">Out of Stock</button>
+                    <button className="outOf-btn">Out of Stock</button>
                 </div>
             </section>
         </div>

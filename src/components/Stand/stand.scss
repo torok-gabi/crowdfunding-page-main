@@ -1,3 +1,4 @@
+@import "../../variables";
 .stand-container {
     width: 100vw;
     height: auto;
@@ -7,24 +8,26 @@
     .stand-content {
         align-items: center;
         width: 70%;
-        height: 45vh;
+        height: auto;
         padding: 2rem;
-        border: 1px solid lightgray;
+        border: 1px solid $subtitleFont;
         border-radius: .5rem;
         margin: 2rem 0;
         & div {
             margin-bottom: 2rem;
         }
         .pledge {
-            color: hsl(176, 50%, 47%);
+            color: $buttons;
+            font-weight: bold;
         }
         .stock {
             font-size: 1.8rem;
             font-weight: bold;
         }
         .stand-btn {
-            background-color: hsl(176, 50%, 47%);
-            padding: 1.1rem 2rem;
+            max-width: 15rem;
+            background-color: $buttons;
+            padding: .8rem 2rem;
             border-radius: 2rem;
             color: white;
             border: none;
@@ -32,11 +35,24 @@
             cursor: pointer;
         }
         .stand-btn:hover {
-            background-color: hsl(176, 72%, 28%);
+            background-color: $hoverButtons;
         }
         .stand-btn:active,
         .stand-btn:focus {
             outline: none;
+        }
+    }
+    & .mahogany {
+        opacity: .4;
+        & .outOf-btn {
+            padding: .8rem 2rem;
+            border-radius: 2rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+            max-width: 15rem;
+            background-color: $mainFont;
+            color: white;
+            border: none;
         }
     }
 }

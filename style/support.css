@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+.support-container.active,
+.gotIt {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 30rem;
+  left: 0;
+  background-color: #fafae1;
+  border: 1px solid #7a7a7a;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+.support-container.active .check,
+.gotIt .check {
+  width: 4rem;
+  margin-bottom: 2rem;
+}
+.support-container.active h3,
+.gotIt h3 {
+  margin-bottom: 2rem;
+}
+.support-container.active .support-btn,
+.gotIt .support-btn {
+  max-width: 15rem;
+  background-color: #3cb4ac;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+.support-container.active .support-btn:hover,
+.support-container.active .support-btn:focus,
+.support-container.active .support-btn:active,
+.gotIt .support-btn:hover,
+.gotIt .support-btn:focus,
+.gotIt .support-btn:active {
+  background-color: #147b74;
+  outline: none;
+}
+
+.support-container {
+  display: none;
+}

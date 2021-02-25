@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+.project-container.active {
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+  height: auto;
+  border: 1px solid #7a7a7a;
+  border-radius: 0.5rem;
+  padding: 4rem 2rem;
+  position: absolute;
+  background-color: #fafae1;
+  box-shadow: 5px 5px 5px #7a7a7a;
+}
+.project-container.active .close {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-container.active .close.active {
+  display: none;
+}
+.project-container.active .subtitle {
+  width: 90%;
+}
+.project-container.active .stand-content {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+  position: relative;
+  border: 1px solid #7a7a7a;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.project-container.active .stand-content .title-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+.project-container.active .stand-content .title-content .pledge {
+  color: #3cb4ac;
+}
+.project-container.active .stand-content .title-content .radio-btn {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #7a7a7a;
+  border-radius: 50%;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+.project-container.active .stand-content .description,
+.project-container.active .stand-content .btn-description.active {
+  width: 100%;
+  display: flex;
+  text-align: left;
+  margin: 1rem 0;
+}
+.project-container.active .stand-content .description .stock,
+.project-container.active .stand-content .btn-description.active .stock {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.project-container.active .stand-content .description .pledge-btn,
+.project-container.active .stand-content .btn-description.active .pledge-btn {
+  width: 30%;
+  border: 1px solid #7a7a7a;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+.project-container.active .stand-content .description .stand-btn,
+.project-container.active .stand-content .btn-description.active .stand-btn {
+  width: 60%;
+  background-color: #3cb4ac;
+  padding: 0.8rem 1rem;
+  border-radius: 2rem;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.project-container.active .stand-content .enter-pledge {
+  padding: 1rem 0;
+  border-top: 1px solid #7a7a7a;
+}
+
+.project-container,
+.btn-description {
+  display: none;
+}

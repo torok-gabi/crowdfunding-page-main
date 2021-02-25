@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import bookmark from "./icon-bookmark.svg";
 import mastercraft from "./logo-mastercraft.svg";
 import "./bamboo.scss";
+import Project from '../Project/Project';
 
-const Bamboo = ({sidebar, clickHandler}) => {
+const Bamboo = ({sidebar, clickHandler, select, clickSelect}) => {
+
+    
+
+    
     return (
         <main className="main-container">
             <section className="bamboo-container">
@@ -15,7 +20,7 @@ const Bamboo = ({sidebar, clickHandler}) => {
                     <p>A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
                 </div>
                 <div className="button-container">
-                    <button className="btn">Back this project</button>
+                    <button onClick={clickSelect} className="bamboo-btn">Back this project</button>
                     <div className="bookmark-btn" onClick={clickHandler} >
                         <img className={sidebar ? "bookmark-img active" : "bookmark-img"} src={bookmark}  alt="bookmark img"/>
                         <span className={sidebar ? "bookmark active" : "bookmark"}>Bookmarked</span>
@@ -31,6 +36,7 @@ const Bamboo = ({sidebar, clickHandler}) => {
                 <p className="border-none">days left</p>
                 <span className="sideBar"></span>
             </section>
+            <Project select={select} clickSelect={clickSelect} sidebar={sidebar}/>
         </main>
     )
 }

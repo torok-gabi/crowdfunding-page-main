@@ -1,0 +1,94 @@
+@import "../../variables";
+.project-container.active {
+    display: flex;
+    flex-direction: column;
+    width: 85vw;
+    height: auto;
+    border: 1px solid $subtitleFont;
+    border-radius: .5rem;
+    padding: 4rem 2rem;
+    position: absolute;
+    background-color: rgb(250, 250, 225);
+    box-shadow: 5px 5px 5px $subtitleFont;
+    .close {
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .close.active {
+        display: none;
+    }
+    .subtitle {
+        width: 90%;
+    }
+    .stand-content {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+        position: relative;
+        border: 1px solid $subtitleFont;
+        border-radius: .5rem;
+        padding: 1rem;
+        .title-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            .pledge {
+                color: $buttons;
+            }
+            .radio-btn {
+                width: 1.5rem;
+                height: 1.5rem;
+                border: 1px solid $subtitleFont;
+                border-radius: 50%;
+                position: absolute;
+                top: 1rem;
+                left: 1rem;
+            }
+        }
+        .description,
+        .btn-description.active {
+            width: 100%;
+            display: flex;
+            text-align: left;
+            margin: 1rem 0;
+            .stock {
+                font-size: 1.8rem;
+                font-weight: $bold;
+            }
+            .pledge-btn {
+                width: 30%;
+                border: 1px solid $subtitleFont;
+                padding: .5rem 1.5rem;
+                border-radius: 2rem;
+                color: $mainFont;
+                font-size: 1rem;
+                cursor: pointer;
+                margin-right: .5rem;
+            }
+            .stand-btn {
+                width: 60%;
+                background-color: $buttons;
+                padding: .8rem 1rem;
+                border-radius: 2rem;
+                color: white;
+                border: none;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+        }
+        .enter-pledge {
+            padding: 1rem 0;
+            border-top: 1px solid $subtitleFont;
+        }
+    }
+}
+
+.project-container,
+.btn-description {
+    display: none;
+}
