@@ -39,7 +39,7 @@
         align-items: center;
         justify-content: center;
         position: absolute;
-        bottom: 2rem;
+        bottom: 3rem;
         .nav-list {
             list-style: none;
             display: flex;
@@ -50,7 +50,6 @@
             background-color: rgba(255, 255, 255, .8);
             .border {
                 display: flex;
-                margin-left: -2.5rem;
                 width: 100%;
                 border-bottom: 1px solid hsl(0, 4%, 82%);
                 padding: 2rem 0;
