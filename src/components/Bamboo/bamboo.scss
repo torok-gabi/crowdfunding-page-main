@@ -174,9 +174,10 @@
             }
         }
         .sideBar {
-            margin-left: 2rem;
+            left: 2rem;
             width: 75%;
             position: absolute;
+            bottom: 0;
         }
     }
 }
