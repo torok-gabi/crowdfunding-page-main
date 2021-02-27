@@ -107,11 +107,6 @@
     margin-top: -5rem;
   }
 }
-@media only screen and (min-width: 768px) {
-  .main-container {
-    margin-top: -5rem;
-  }
-}
 @media only screen and (min-width: 992px) {
   .main-container {
     width: 60%;
@@ -129,6 +124,7 @@
     justify-content: space-between;
     padding: 0 2rem;
     margin-top: 3rem;
+    position: relative;
   }
   .main-container .amount-container div {
     display: flex;
@@ -152,8 +148,9 @@
     width: 60%;
     border-top: 10px solid #3cb4ac;
     border-radius: 1rem;
-    margin-top: 2rem;
-    margin-left: -5rem;
+    bottom: -2rem;
+    left: 2rem;
+    position: absolute;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -170,9 +167,6 @@
     font-size: 0.9rem;
   }
   .main-container .sideBar {
-    left: 2rem;
     width: 75%;
-    position: absolute;
-    bottom: 0;
   }
 }
