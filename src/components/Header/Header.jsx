@@ -28,13 +28,6 @@ const Header = ({sidebar, clickHandler}) => {
                     <li className="border"><a href="" className="nav-item">Get Started</a></li>
                 </ul>    
             </div>
-            <nav className="navbar">
-                <ul className="navbar-list">
-                    <li ><a href="" className="nav-item">About</a></li>
-                    <li ><a href="" className="nav-item">Discover</a></li>
-                    <li ><a href="" className="nav-item">Get Started</a></li>
-                </ul>
-            </nav>
         </header>
     )
 }

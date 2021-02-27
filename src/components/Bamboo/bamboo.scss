@@ -1,16 +1,20 @@
 @import "../../variables";
 .main-container {
-    width: 80%;
+    width: 90%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border-radius: .5rem;
+    background-color: rgba(255, 255, 255, .4);
+    border-radius: .5rem .5rem 0 0;
     margin-top: -3rem;
     z-index: 1;
     margin-left: auto;
     margin-right: auto;
+    .bamboo-container {
+        width: 100%;
+    }
     .bamboo-img {
         margin-top: -1.5rem;
     }
@@ -27,7 +31,7 @@
         .bamboo-btn {
             max-width: 50%;
             background-color: $buttons;
-            padding: 1rem 1.5rem;
+            padding: 1rem;
             border-radius: 2rem;
             color: white;
             border: none;
@@ -44,15 +48,16 @@
         .bookmark-btn {
             width: 50%;
             display: flex;
-            & img {
+            .bookmark-img {
                 width: 30%;
-                opacity: .7;
+                opacity: 1;
                 margin-left: 1rem;
             }
-            & img.active {
-                opacity: 1;
+            .bookmark-img:active {
+                opacity: .7;
             }
-            .bookmark {
+            .bookmark,
+            .black-bookmark.active {
                 display: none;
             }
             .bookmark.active {
@@ -60,6 +65,12 @@
                 align-items: center;
                 margin-left: 0.5rem;
                 color: $hoverButtons;
+                font-size: 1rem;
+            }
+            .black-bookmark {
+                display: flex;
+                align-items: center;
+                margin-left: 0.5rem;
                 font-size: 1rem;
             }
         }
@@ -87,6 +98,72 @@
             text-align: left;
             border-top: 10px solid $buttons;
             border-radius: 1rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .main-container {
+        width: 60%;
+        margin-top: 1rem;
+        .button-container {
+            .bookmark-btn {
+                width: 30%;
+                display: flex;
+            }
+        }
+        .amount-container {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 2rem;
+            margin-top: 3rem;
+            div {
+                display: flex;
+                flex-direction: column;
+                border-right: 1px solid $subtitleFont;
+                h2 {
+                    margin: 0;
+                    text-align: left;
+                    padding: 0 .5rem;
+                    font-size: 2rem;
+                }
+                p {
+                    padding: 0 .5rem;
+                    border: none;
+                }
+            }
+            .border-none {
+                border-right: none;
+            }
+        }
+        .sideBar {
+            width: 60%;
+            border-top: 10px solid $buttons;
+            border-radius: 1rem;
+            margin-top: 2rem;
+            margin-left: -5rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .main-container {
+        max-width: 40vw;
+        margin-top: 6rem;
+        align-items: flex-start;
+        position: relative;
+        .text-content {
+            padding: 1rem;
+            p {
+                font-size: 0.9rem;
+            }
+        }
+        .sideBar {
+            margin-left: 5rem;
+            max-width: 70%;
         }
     }
 }

@@ -5,7 +5,7 @@ const Stand = ({clickSelect}) => {
     return (
         <div className="stand-container">
             <section className="stand-content">
-                <div>
+                <div className="stand-content-text">
                     <h4>Bamboo Stand</h4>
                     <p className="pledge">Pledge $25 or more</p>
                 </div>
@@ -13,13 +13,13 @@ const Stand = ({clickSelect}) => {
                     <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
                         you’ll be added to a special Backer member list.</p>
                 </div>
-                <div>
+                <div className="row">
                     <p><span className="stock">101</span> left</p>
                     <button onClick={clickSelect} className="stand-btn">Select Reward</button>
                 </div>
             </section>
             <section className="stand-content">
-                <div>
+                <div className="stand-content-text">
                     <h4>Black Edition Stand</h4>
                     <p className="pledge">Pledge $75 or more</p>
                 </div>
@@ -27,13 +27,13 @@ const Stand = ({clickSelect}) => {
                     <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
                         member list. Shipping is included.</p>
                 </div>
-                <div>
+                <div className="row">
                     <p><span className="stock">64</span> left</p>
                     <button onClick={clickSelect} className="stand-btn">Select Reward</button>
                 </div>
             </section>
-            <section className="stand-content mahogany">
-                <div>
+            <section className="mahogany">
+                <div className="stand-content-text">
                     <h4>Mahogany Special Edition</h4>
                     <p className="pledge">Pledge $200 or more</p>
                 </div>
@@ -41,7 +41,7 @@ const Stand = ({clickSelect}) => {
                     <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
                         to our Backer member list. Shipping is included.</p>
                 </div>
-                <div>
+                <div className="row">
                     <p><span className="stock">0</span> left</p>
                     <button className="outOf-btn">Out of Stock</button>
                 </div>

@@ -1,16 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
 .main-container {
-  width: 80%;
+  width: 90%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 0.5rem 0.5rem 0 0;
   margin-top: -3rem;
   z-index: 1;
   margin-left: auto;
   margin-right: auto;
+}
+.main-container .bamboo-container {
+  width: 100%;
 }
 .main-container .bamboo-img {
   margin-top: -1.5rem;
@@ -29,7 +33,7 @@
 .main-container .button-container .bamboo-btn {
   max-width: 50%;
   background-color: #3cb4ac;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   border-radius: 2rem;
   color: white;
   border: none;
@@ -47,15 +51,16 @@
   width: 50%;
   display: flex;
 }
-.main-container .button-container .bookmark-btn img {
+.main-container .button-container .bookmark-btn .bookmark-img {
   width: 30%;
-  opacity: 0.7;
+  opacity: 1;
   margin-left: 1rem;
 }
-.main-container .button-container .bookmark-btn img.active {
-  opacity: 1;
+.main-container .button-container .bookmark-btn .bookmark-img:active {
+  opacity: 0.7;
 }
-.main-container .button-container .bookmark-btn .bookmark {
+.main-container .button-container .bookmark-btn .bookmark,
+.main-container .button-container .bookmark-btn .black-bookmark.active {
   display: none;
 }
 .main-container .button-container .bookmark-btn .bookmark.active {
@@ -63,6 +68,12 @@
   align-items: center;
   margin-left: 0.5rem;
   color: #147b74;
+  font-size: 1rem;
+}
+.main-container .button-container .bookmark-btn .black-bookmark {
+  display: flex;
+  align-items: center;
+  margin-left: 0.5rem;
   font-size: 1rem;
 }
 .main-container .amount-container {
@@ -89,4 +100,67 @@
   text-align: left;
   border-top: 10px solid #3cb4ac;
   border-radius: 1rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .main-container {
+    width: 60%;
+    margin-top: 1rem;
+  }
+  .main-container .button-container .bookmark-btn {
+    width: 30%;
+    display: flex;
+  }
+  .main-container .amount-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2rem;
+    margin-top: 3rem;
+  }
+  .main-container .amount-container div {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #7a7a7a;
+  }
+  .main-container .amount-container div h2 {
+    margin: 0;
+    text-align: left;
+    padding: 0 0.5rem;
+    font-size: 2rem;
+  }
+  .main-container .amount-container div p {
+    padding: 0 0.5rem;
+    border: none;
+  }
+  .main-container .amount-container .border-none {
+    border-right: none;
+  }
+  .main-container .sideBar {
+    width: 60%;
+    border-top: 10px solid #3cb4ac;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-left: -5rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .main-container {
+    max-width: 40vw;
+    margin-top: 6rem;
+    align-items: flex-start;
+    position: relative;
+  }
+  .main-container .text-content {
+    padding: 1rem;
+  }
+  .main-container .text-content p {
+    font-size: 0.9rem;
+  }
+  .main-container .sideBar {
+    margin-left: 5rem;
+    max-width: 70%;
+  }
 }

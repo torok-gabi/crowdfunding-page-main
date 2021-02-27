@@ -1,13 +1,17 @@
 @import "../../variables";
 .stand-container {
-    width: 100vw;
+    width: 90%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    .stand-content {
+    padding: 1rem 0;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, .4);
+    .stand-content,
+    .mahogany {
         align-items: center;
-        width: 70%;
+        width: 90%;
         height: auto;
         padding: 2rem;
         border: 1px solid $subtitleFont;
@@ -42,9 +46,9 @@
             outline: none;
         }
     }
-    & .mahogany {
+    .mahogany {
         opacity: .4;
-        & .outOf-btn {
+        .outOf-btn {
             padding: .8rem 2rem;
             border-radius: 2rem;
             font-size: 1.2rem;
@@ -53,6 +57,45 @@
             background-color: $mainFont;
             color: white;
             border: none;
+        }
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .stand-container {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 60vw;
+        padding: 0 2rem;
+        .stand-content,
+        .mahogany {
+            flex-direction: column;
+            width: 100%;
+            padding: 1rem;
+            .row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 0;
+                .stand-btn,
+                .outOf-btn {
+                    max-width: 10rem;
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .stand-container {
+        max-width: 40vw;
+        .stand-content {
+            &-text {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
         }
     }
 }

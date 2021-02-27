@@ -8,6 +8,7 @@ const Project = ({select, clickSelect, sidebar}) => {
     const [support, setSupport] = useState(false);
     const [bamboo, setBamboo] = useState(false);
     const [blackEdition, setBlackEdition] = useState(false);
+    const [border, setBorder] = useState(false);
 
     const clickSupport = () => {
         clickSelect(!select);
@@ -16,13 +17,17 @@ const Project = ({select, clickSelect, sidebar}) => {
     
     const clickBamboo = () => {
         setBamboo(!bamboo);
+        
     }
 
     const clickBlackEdition = () => {
         setBlackEdition(!blackEdition);
     }
 
-
+    const clickBorder = () => {
+        setBorder(!border);
+    }
+    
     return (
         <>
             <div className={select ? "project-container active" : "project-container"}>
@@ -31,74 +36,84 @@ const Project = ({select, clickSelect, sidebar}) => {
                     <span onClick={clickSelect}><img src={Close} alt="close icon"/></span>
                 </div>
                 <p className="subtitle">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
-                <div className="stand-content">
+                <section className={border ? "stand-content active" : "stand-content"}>
                     <div className="title-content">
-                        <form className="radio-btn">
-                            <input type="radio" id="no-reward" name="no-reward" value="no reward"/>
-                            <label htmlFor="no-reward"></label>
-                        </form>
-                        <h4>Pledge with no reward</h4>
+                        <div className={border ? "radio-btn active" : "radio-btn"} onClick={clickSupport}>
+                            <label>
+                                <input  className="radio" type="radio" name="support" value="no reward"/>
+                            </label>
+                        </div>
+                        <h4 className="title">Pledge with no reward</h4>
                     </div>
                     <div className="description">
                         <p>Choose to support us without a reward if you simply believe in our project. As a backer, 
                             you will be signed up to receive product updates via email.</p>
                     </div>
-                </div>
-                <section className="stand-content">
+                </section>
+                <section className={bamboo ? "stand-content active" : "stand-content"}>
                     <div className="title-content">
-                        <form className="radio-btn">
-                            <input onClick={clickBamboo} id="bamboo stand" name="bamboo stand" type="radio" value="bamboo stand"/>
-                            <label htmlFor="bamboo stand"></label>
-                        </form>                       
-                        <h4>Bamboo Stand</h4>
+                        <div className={bamboo ? "radio-btn active" : "radio-btn"} onClick={clickBamboo}>
+                            <label>
+                                <input className="radio" name="support" type="radio" value="bamboo stand"/>
+                            </label>
+                        </div>                       
+                        <h4 className="title">Bamboo Stand</h4>
                         <p className="pledge">Pledge $25 or more</p>
+                        <p className="mobile-none"><span className="number">101</span>left</p>
                     </div>
                     <div className="description">
-                        <p>You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
+                        <p className="description-text">You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and
                             you’ll be added to a special Backer member list.</p>
                     </div>
                     <div className="description">
-                        <p><span className="stock">101</span> left</p>
+                        <p className="stock"><span className="stock-number">101</span> left</p>
                     </div>
-                    <p className="enter-pledge">Enter your pledge</p>
                     <div className={bamboo ? "btn-description active" : "btn-description"}>
-                        <button className="pledge-btn">$25</button>
-                        <button onClick={clickSupport} className="stand-btn">Continue</button>
+                        <p className="enter-pledge">Enter your pledge</p>
+                        <div className="btn-container">
+                            <button className="pledge-btn">$25</button>
+                            <button onClick={clickSupport} className="stand-btn">Continue</button>
+                        </div>
                     </div>
                 </section>
-                <section className="stand-content">
+                <section className={blackEdition ? "stand-content active" : "stand-content"}>
                     <div className="title-content">
-                        <form className="radio-btn">
-                            <input onClick={clickBlackEdition} type="radio" id="black edition stand" name="black edition stand" value="black edition stand"/>
-                            <label htmlFor="black edition stand"></label>
-                        </form>                       
-                        <h4>Black Edition Stand</h4>
+                        <div className={blackEdition ? "radio-btn active" : "radio-btn"} onClick={clickBlackEdition}>
+                            <label>
+                                <input className="radio" type="radio" name="support" value="black edition stand"/>
+                            </label>
+                        </div>                       
+                        <h4 className="title">Black Edition Stand</h4>
                         <p className="pledge">Pledge $75 or more</p>
+                        <p className="mobile-none"><span className="number">64</span> left</p>
                     </div>
                     <div className="description">
-                        <p>You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+                        <p className="description-text">You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
                             member list. Shipping is included.</p>
                     </div>
                     <div className="description">
-                        <p><span className="stock">64</span> left</p>
+                        <p className="stock"><span className="stock-number">64</span> left</p>
                     </div>
-                    <p className="enter-pledge">Enter your pledge</p>
                     <div className={blackEdition ? "btn-description active" : "btn-description"}>
-                        <button className="pledge-btn">$75</button>
-                        <button onClick={clickSupport} className="stand-btn">Continue</button>
+                        <p className="enter-pledge">Enter your pledge</p>
+                        <div className="btn-container">
+                            <button className="pledge-btn">$75</button>
+                            <button onClick={clickSupport} className="stand-btn">Continue</button>
+                        </div>
                     </div>
                 </section>
                 <section className="stand-content mahogany">
                     <div className="title-content">
                         <h4>Mahogany Special Edition</h4>
                         <p className="pledge">Pledge $200 or more</p>
+                        <p className="mobile-none"><span className="number">0</span> left</p>
                     </div>
                     <div className="description">
                         <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
                             to our Backer member list. Shipping is included.</p>
                     </div>
                     <div className="description">
-                        <p><span className="stock">0</span> left</p>
+                        <p className="stock"><span className="stock-number">0</span> left</p>
                     </div>
                 </section>
             </div>

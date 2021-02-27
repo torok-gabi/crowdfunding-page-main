@@ -1,32 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
 .stand-container {
-  width: 100vw;
+  width: 90%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1rem 0;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.4);
 }
-.stand-container .stand-content {
+.stand-container .stand-content,
+.stand-container .mahogany {
   align-items: center;
-  width: 70%;
+  width: 90%;
   height: auto;
   padding: 2rem;
   border: 1px solid #7a7a7a;
   border-radius: 0.5rem;
   margin: 2rem 0;
 }
-.stand-container .stand-content div {
+.stand-container .stand-content div,
+.stand-container .mahogany div {
   margin-bottom: 2rem;
 }
-.stand-container .stand-content .pledge {
+.stand-container .stand-content .pledge,
+.stand-container .mahogany .pledge {
   color: #3cb4ac;
   font-weight: bold;
 }
-.stand-container .stand-content .stock {
+.stand-container .stand-content .stock,
+.stand-container .mahogany .stock {
   font-size: 1.8rem;
   font-weight: bold;
 }
-.stand-container .stand-content .stand-btn {
+.stand-container .stand-content .stand-btn,
+.stand-container .mahogany .stand-btn {
   max-width: 15rem;
   background-color: #3cb4ac;
   padding: 0.8rem 2rem;
@@ -36,11 +44,14 @@
   font-size: 1.2rem;
   cursor: pointer;
 }
-.stand-container .stand-content .stand-btn:hover {
+.stand-container .stand-content .stand-btn:hover,
+.stand-container .mahogany .stand-btn:hover {
   background-color: #147b74;
 }
 .stand-container .stand-content .stand-btn:active,
-.stand-container .stand-content .stand-btn:focus {
+.stand-container .stand-content .stand-btn:focus,
+.stand-container .mahogany .stand-btn:active,
+.stand-container .mahogany .stand-btn:focus {
   outline: none;
 }
 .stand-container .mahogany {
@@ -55,4 +66,43 @@
   background-color: black;
   color: white;
   border: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .stand-container {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60vw;
+    padding: 0 2rem;
+  }
+  .stand-container .stand-content,
+.stand-container .mahogany {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+  }
+  .stand-container .stand-content .row,
+.stand-container .mahogany .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+  }
+  .stand-container .stand-content .row .stand-btn,
+.stand-container .stand-content .row .outOf-btn,
+.stand-container .mahogany .row .stand-btn,
+.stand-container .mahogany .row .outOf-btn {
+    max-width: 10rem;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .stand-container {
+    max-width: 40vw;
+  }
+  .stand-container .stand-content-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

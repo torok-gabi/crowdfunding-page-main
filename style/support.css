@@ -8,8 +8,6 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 30rem;
-  left: 0;
   background-color: #fafae1;
   border: 1px solid #7a7a7a;
   border-radius: 0.5rem;
@@ -48,4 +46,16 @@
 
 .support-container {
   display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .support-container.active {
+    max-width: 40vw;
+    margin-top: 75%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .support-container.active {
+    margin-top: 100%;
+  }
 }
