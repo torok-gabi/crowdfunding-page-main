@@ -102,6 +102,11 @@
   border-radius: 1rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .main-container {
+    margin-top: -5rem;
+  }
+}
 @media only screen and (min-width: 992px) {
   .main-container {
     width: 60%;
@@ -160,7 +165,7 @@
     font-size: 0.9rem;
   }
   .main-container .sideBar {
-    margin-left: 5rem;
-    max-width: 70%;
+    margin-left: 2rem;
+    width: 75%;
   }
 }
