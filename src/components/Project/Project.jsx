@@ -33,8 +33,8 @@ const Project = ({select, clickSelect, sidebar}) => {
                 <section className={border ? "stand-content active" : "stand-content"} aria-label="stand-content">
                     <div className="title-content" aria-label="title-content">
                         <div className={border ? "radio-btn active" : "radio-btn"} onClick={clickSupport}>
-                            <label>
-                                <input className="radio" type="radio" name="support" value="no reward" role="checkbox"/>
+                            <label for="no-reward">
+                                <input className="radio" id="no-reward" type="radio" name="support" value="no reward" role="checkbox"/>
                             </label>
                         </div>
                         <h4 className="title">Pledge with no reward</h4>
@@ -47,8 +47,8 @@ const Project = ({select, clickSelect, sidebar}) => {
                 <section className={bamboo ? "stand-content active" : "stand-content"} aria-label="stand-content">
                     <div className="title-content" aria-label="title-content">
                         <div className={bamboo ? "radio-btn active" : "radio-btn"} onClick={clickBamboo}>
-                            <label>
-                                <input className="radio" name="support" type="radio" value="bamboo stand" role="checkbox"/>
+                            <label for="bamboo">
+                                <input className="radio" id="bamboo" name="support" type="radio" value="bamboo stand" role="checkbox"/>
                             </label>
                         </div>                       
                         <h4 className="title">Bamboo Stand</h4>
@@ -73,8 +73,8 @@ const Project = ({select, clickSelect, sidebar}) => {
                 <section className={blackEdition ? "stand-content active" : "stand-content"} aria-label="stand-content">
                     <div className="title-content">
                         <div className={blackEdition ? "radio-btn active" : "radio-btn"} onClick={clickBlackEdition}>
-                            <label>
-                                <input className="radio" type="radio" name="support" value="black edition stand" role="checkbox"/>
+                            <label for="black edition stand">
+                                <input className="radio" id="black edition stand" type="radio" name="support" value="black edition stand" role="checkbox"/>
                             </label>
                         </div>                       
                         <h4 className="title">Black Edition Stand</h4>
