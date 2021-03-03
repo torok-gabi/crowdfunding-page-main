@@ -36,7 +36,8 @@
             color: white;
             border: none;
             cursor: pointer;
-            text-shadow: 1px 1px 1px $mainFont;
+            text-shadow: 2px 2px 1px $mainFont;
+            letter-spacing: 1.1px;
             font-size: .9rem;
         }
         .bamboo-btn:active,

@@ -169,7 +169,8 @@
   color: white;
   border: none;
   font-size: 1rem;
-  text-shadow: 1px 1px 1px black;
+  text-shadow: 2px 2px 1px black;
+  letter-spacing: 1.1px;
   cursor: pointer;
 }
 
