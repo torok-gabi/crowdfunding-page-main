@@ -49,7 +49,7 @@ const Project = ({select, clickSelect, sidebar}) => {
                             <label htmlFor="bamboo"></label>
                             <input className="radio" id="bamboo" name="support" type="radio" value="bamboo stand" role="checkbox"/>                          
                         </div>                       
-                        <h4 className="title">Bamboo Stand</h4>
+                        <h4 className="title" aria-label="title">Bamboo Stand</h4>
                         <p className="pledge">Pledge $25 or more</p>
                         <p className="mobile-none"><span className="number">101</span>left</p>
                     </div>
@@ -74,7 +74,7 @@ const Project = ({select, clickSelect, sidebar}) => {
                                 <label htmlFor="black edition stand"></label>
                                 <input className="radio" id="black edition stand" type="radio" name="support" value="black edition stand" role="checkbox"/>
                         </div>                       
-                        <h4 className="title">Black Edition Stand</h4>
+                        <h4 className="title" aria-label="title">Black Edition Stand</h4>
                         <p className="pledge">Pledge $75 or more</p>
                         <p className="mobile-none"><span className="number">64</span> left</p>
                     </div>
@@ -95,7 +95,7 @@ const Project = ({select, clickSelect, sidebar}) => {
                 </section>
                 <section className="stand-content mahogany" aria-label="stand-content">
                     <div className="title-content" aria-label="title-content">
-                        <h4>Mahogany Special Edition</h4>
+                        <h4 aria-label="title">Mahogany Special Edition</h4>
                         <p className="pledge">Pledge $200 or more</p>
                         <p className="mobile-none"><span className="number">0</span> left</p>
                     </div>

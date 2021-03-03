@@ -1,58 +1,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
 .project-container.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 85vw;
   height: auto;
   border: 1px solid #7a7a7a;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   padding: 4rem 2rem;
   position: absolute;
   background-color: #fafae1;
-  box-shadow: 5px 10px 5px 10px #7a7a7a;
+  -webkit-box-shadow: 5px 10px 5px 10px #7a7a7a;
+          box-shadow: 5px 10px 5px 10px #7a7a7a;
 }
+
 .project-container.active .close {
   width: 90%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .project-container.active .close.active {
   display: none;
 }
+
 .project-container.active .subtitle {
   width: 90%;
 }
+
 .project-container.active .stand-content.active {
   border-color: #3cb4ac;
 }
+
 .project-container.active .stand-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 2rem 0;
   position: relative;
   border: 1px solid #7a7a7a;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   padding: 1rem;
 }
+
 .project-container.active .stand-content .title-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
 }
+
 .project-container.active .stand-content .title-content .title:hover {
   color: #3cb4ac;
   font-weight: 700;
 }
+
 .project-container.active .stand-content .title-content .pledge {
   color: #3cb4ac;
 }
+
 .project-container.active .stand-content .title-content .mobile-none {
   display: none;
 }
+
 .project-container.active .stand-content .title-content .radio {
   width: 1.5rem;
   height: 1.5rem;
@@ -62,34 +99,48 @@
   left: 1rem;
   background-color: #3cb4ac;
 }
+
 .project-container.active .stand-content .btn-description.active {
   padding-top: 1rem;
   border-top: 1px solid #7a7a7a;
 }
+
 .project-container.active .stand-content .description,
 .project-container.active .stand-content .btn-description.active {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: left;
   padding-top: 1rem;
 }
+
 .project-container.active .stand-content .description .stock-number,
 .project-container.active .stand-content .btn-description.active .stock-number {
   font-size: 1.8rem;
   font-weight: 700;
 }
+
 .project-container.active .stand-content .description .enter-pledge,
 .project-container.active .stand-content .btn-description.active .enter-pledge {
   padding: 1rem 0;
   text-align: center;
 }
+
 .project-container.active .stand-content .description .btn-container,
 .project-container.active .stand-content .btn-description.active .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
+
 .project-container.active .stand-content .description .btn-container .pledge-btn,
 .project-container.active .stand-content .btn-description.active .btn-container .pledge-btn {
   width: 40%;
@@ -101,12 +152,14 @@
   background-color: rgba(0, 0, 0, 0.2);
   font-size: 1rem;
   cursor: pointer;
-  margin-right: 0.5rem;
+  margin-right: .5rem;
 }
+
 .project-container.active .stand-content .description .btn-container .pledge-btn:hover,
 .project-container.active .stand-content .btn-description.active .btn-container .pledge-btn:hover {
   background-color: rgba(255, 255, 255, 0.8);
 }
+
 .project-container.active .stand-content .description .btn-container .stand-btn,
 .project-container.active .stand-content .btn-description.active .btn-container .stand-btn {
   width: 60%;
@@ -116,12 +169,15 @@
   color: white;
   border: none;
   font-size: 1rem;
+  text-shadow: 1px 1px 1px black;
   cursor: pointer;
 }
+
 .project-container.active .stand-content .description .btn-container .stand-btn:hover,
 .project-container.active .stand-content .btn-description.active .btn-container .stand-btn:hover {
   background-color: #147b74;
 }
+
 .project-container.active .stand-content.mahogany {
   opacity: 0.4;
 }
@@ -147,13 +203,20 @@
   }
   .project-container.active .stand-content .title-content {
     width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .project-container.active .stand-content .title-content .title {
     padding-left: 2rem;
   }
   .project-container.active .stand-content .title-content .mobile-none {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .project-container.active .stand-content .title-content .mobile-none .number {
@@ -161,41 +224,52 @@
     font-weight: 700;
   }
   .project-container.active .stand-content .description {
-    font-size: 0.8rem;
+    font-size: .8rem;
     padding-left: 2rem;
   }
   .project-container.active .stand-content .description .stock,
-.project-container.active .stand-content .description .stock-number {
+  .project-container.active .stand-content .description .stock-number {
     display: none;
   }
   .project-container.active .stand-content .btn-description.active {
     width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     top: 3rem;
     right: 2rem;
   }
   .project-container.active .stand-content .btn-description.active .enter-pledge {
-    font-size: 0.8rem;
+    font-size: .8rem;
     width: 40%;
   }
   .project-container.active .stand-content .btn-description.active .btn-container {
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .project-container.active .stand-content .btn-description.active .btn-container .pledge-btn {
     max-width: 5rem;
-    font-size: 0.8rem;
+    font-size: .8rem;
   }
   .project-container.active .stand-content .btn-description.active .btn-container .stand-btn {
     max-width: 10rem;
-    font-size: 0.8rem;
-    padding: 0.5rem 0.3rem;
+    font-size: .8rem;
+    padding: .5rem .3rem;
   }
 }
+
 @media only screen and (min-width: 1440px) {
   .project-container.active {
     max-width: 40vw;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }

@@ -2,63 +2,82 @@
 .stand-container {
   width: 90%;
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem 0;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.4);
 }
+
 .stand-container .stand-content,
 .stand-container .mahogany {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 90%;
   height: auto;
   padding: 2rem;
   border: 1px solid #7a7a7a;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   margin: 2rem 0;
 }
+
 .stand-container .stand-content div,
 .stand-container .mahogany div {
   margin-bottom: 2rem;
 }
+
 .stand-container .stand-content .pledge,
 .stand-container .mahogany .pledge {
   color: #3cb4ac;
   font-weight: bold;
 }
+
 .stand-container .stand-content .stock,
 .stand-container .mahogany .stock {
   font-size: 1.8rem;
   font-weight: bold;
 }
+
 .stand-container .stand-content .stand-btn,
 .stand-container .mahogany .stand-btn {
   max-width: 15rem;
   background-color: #3cb4ac;
-  padding: 0.8rem 2rem;
+  padding: .8rem 2rem;
   border-radius: 2rem;
   color: white;
   border: none;
   font-size: 1.2rem;
+  text-shadow: 1px 1px 1px black;
   cursor: pointer;
 }
+
 .stand-container .stand-content .stand-btn:hover,
 .stand-container .mahogany .stand-btn:hover {
   background-color: #147b74;
 }
+
 .stand-container .stand-content .stand-btn:active,
 .stand-container .stand-content .stand-btn:focus,
 .stand-container .mahogany .stand-btn:active,
 .stand-container .mahogany .stand-btn:focus {
   outline: none;
 }
+
 .stand-container .mahogany {
-  opacity: 0.4;
+  opacity: .4;
 }
+
 .stand-container .mahogany .outOf-btn {
-  padding: 0.8rem 2rem;
+  padding: .8rem 2rem;
   border-radius: 2rem;
   font-size: 1.2rem;
   cursor: pointer;
@@ -70,39 +89,60 @@
 
 @media only screen and (min-width: 992px) {
   .stand-container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0 auto;
     width: 60vw;
     padding: 0 2rem;
   }
   .stand-container .stand-content,
-.stand-container .mahogany {
-    flex-direction: column;
+  .stand-container .mahogany {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     padding: 1rem;
   }
   .stand-container .stand-content .row,
-.stand-container .mahogany .row {
+  .stand-container .mahogany .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0;
   }
   .stand-container .stand-content .row .stand-btn,
-.stand-container .stand-content .row .outOf-btn,
-.stand-container .mahogany .row .stand-btn,
-.stand-container .mahogany .row .outOf-btn {
+  .stand-container .stand-content .row .outOf-btn,
+  .stand-container .mahogany .row .stand-btn,
+  .stand-container .mahogany .row .outOf-btn {
     max-width: 10rem;
-    font-size: 0.8rem;
+    font-size: .8rem;
   }
 }
+
 @media only screen and (min-width: 1440px) {
   .stand-container {
     max-width: 40vw;
   }
   .stand-container .stand-content-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }

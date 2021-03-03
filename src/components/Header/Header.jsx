@@ -22,7 +22,7 @@ const Header = ({sidebar, clickHandler}) => {
                 </div>
             </div>
             <div className={sidebar ? "nav-menu active" : "nav-menu"} aria-label="nav-menu">            
-                <ul className="nav-list" aria-labelledby="nav-list">
+                <ul className="nav-list" aria-label="nav-list">
                     <li className="border"><a href="" className="nav-item">About</a></li>
                     <li className="border"><a href="" className="nav-item">Discover</a></li>
                     <li className="border"><a href="" className="nav-item">Get Started</a></li>

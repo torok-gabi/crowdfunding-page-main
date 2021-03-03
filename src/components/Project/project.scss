@@ -106,6 +106,7 @@
                     color: white;
                     border: none;
                     font-size: 1rem;
+                    text-shadow: 1px 1px 1px $mainFont;
                     cursor: pointer;
                     &:hover {
                         background-color: $hoverButtons;
