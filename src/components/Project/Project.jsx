@@ -32,10 +32,9 @@ const Project = ({select, clickSelect, sidebar}) => {
                 <p className="subtitle">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
                 <section className={border ? "stand-content active" : "stand-content"} aria-label="stand-content">
                     <div className="title-content" aria-label="title-content">
-                        <div className={border ? "radio-btn active" : "radio-btn"} onClick={clickSupport}>
-                            <label for="no-reward">
-                                <input className="radio" id="no-reward" type="radio" name="support" value="no reward" role="checkbox"/>
-                            </label>
+                        <div className={border ? "radio-btn active" : "radio-btn"} onClick={clickSupport}>                           
+                            <label htmlFor="no-reward"></label>
+                            <input className="radio" id="no-reward" type="radio" name="support" value="no reward" role="checkbox"/>
                         </div>
                         <h4 className="title">Pledge with no reward</h4>
                     </div>
@@ -47,9 +46,8 @@ const Project = ({select, clickSelect, sidebar}) => {
                 <section className={bamboo ? "stand-content active" : "stand-content"} aria-label="stand-content">
                     <div className="title-content" aria-label="title-content">
                         <div className={bamboo ? "radio-btn active" : "radio-btn"} onClick={clickBamboo}>
-                            <label for="bamboo">
-                                <input className="radio" id="bamboo" name="support" type="radio" value="bamboo stand" role="checkbox"/>
-                            </label>
+                            <label htmlFor="bamboo"></label>
+                            <input className="radio" id="bamboo" name="support" type="radio" value="bamboo stand" role="checkbox"/>                          
                         </div>                       
                         <h4 className="title">Bamboo Stand</h4>
                         <p className="pledge">Pledge $25 or more</p>
@@ -73,9 +71,8 @@ const Project = ({select, clickSelect, sidebar}) => {
                 <section className={blackEdition ? "stand-content active" : "stand-content"} aria-label="stand-content">
                     <div className="title-content">
                         <div className={blackEdition ? "radio-btn active" : "radio-btn"} onClick={clickBlackEdition}>
-                            <label for="black edition stand">
+                                <label htmlFor="black edition stand"></label>
                                 <input className="radio" id="black edition stand" type="radio" name="support" value="black edition stand" role="checkbox"/>
-                            </label>
                         </div>                       
                         <h4 className="title">Black Edition Stand</h4>
                         <p className="pledge">Pledge $75 or more</p>
