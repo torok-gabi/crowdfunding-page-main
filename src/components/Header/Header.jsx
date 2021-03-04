@@ -15,10 +15,10 @@ const Header = ({sidebar, clickHandler}) => {
             <div className="menu" aria-label="menu">
                 <img src={logo} alt="logo img"/>
                 <div className={sidebar ? "hamburger active visually-hidden-focusable" : "hamburger"}>
-                    <span className="hamburger-icon" onClick={clickHandler}><img src={hamburger} alt="hamburger icon" role="button"/></span>
+                    <span className="hamburger-icon" onClick={clickHandler}><img src={hamburger} alt="hamburger icon" aria-pressid="button" role="button"/></span>
                 </div>
                 <div className={sidebar ? "close active visually-hidden-focusable" : "close"}>
-                    <span className="close-icon" onClick={clickHandler}><img src={close} alt="menu close icon" role="button"/></span>
+                    <span className="close-icon" onClick={clickHandler}><img src={close} alt="menu close icon" aria-pressid="button" role="button"/></span>
                 </div>
             </div>
             <div className={sidebar ? "nav-menu active" : "nav-menu"} aria-label="nav-menu">            
