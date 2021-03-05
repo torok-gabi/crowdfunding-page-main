@@ -32,11 +32,11 @@ const Project = ({select, clickSelect, sidebar}) => {
                 <p className="subtitle">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
                 <section className={border ? "stand-content active" : "stand-content"}>
                     <div className="title-content">
-                        <div className={border ? "radio-btn active" : "radio-btn"} onClick={clickSupport}>                           
+                        <fieldset className={border ? "radio-btn active" : "radio-btn"} onClick={clickSupport}>                           
                             <label>
                                 <input className="radio" type="radio" name="support" value="no reward"/>
                             </label>
-                        </div>
+                        </fieldset>
                         <h4 className="title">Pledge with no reward</h4>
                     </div>
                     <div className="description">
@@ -46,11 +46,11 @@ const Project = ({select, clickSelect, sidebar}) => {
                 </section>
                 <section className={bamboo ? "stand-content active" : "stand-content"}>
                     <div className="title-content">
-                        <div className={bamboo ? "radio-btn active" : "radio-btn"} onClick={clickBamboo}>
+                        <fieldset className={bamboo ? "radio-btn active" : "radio-btn"} onClick={clickBamboo}>
                             <label>
                                 <input className="radio" name="support" type="radio" value="bamboo stand"/>                          
                             </label>
-                        </div>                       
+                        </fieldset>                       
                         <h4 className="title">Bamboo Stand</h4>
                         <p className="pledge">Pledge $25 or more</p>
                         <p className="mobile-none"><span className="number">101</span>left</p>
@@ -72,11 +72,11 @@ const Project = ({select, clickSelect, sidebar}) => {
                 </section>
                 <section className={blackEdition ? "stand-content active" : "stand-content"}>
                     <div className="title-content">
-                        <div className={blackEdition ? "radio-btn active" : "radio-btn"} onClick={clickBlackEdition}>
+                        <fieldset className={blackEdition ? "radio-btn active" : "radio-btn"} onClick={clickBlackEdition}>
                             <label>
                                 <input className="radio" type="radio" name="support" value="black edition stand"/>
                             </label>
-                        </div>                       
+                        </fieldset>                       
                         <h4 className="title">Black Edition Stand</h4>
                         <p className="pledge">Pledge $75 or more</p>
                         <p className="mobile-none"><span className="number">64</span> left</p>
