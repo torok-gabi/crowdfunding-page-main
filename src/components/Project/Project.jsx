@@ -33,8 +33,8 @@ const Project = ({select, clickSelect, sidebar}) => {
                 <section className={border ? "stand-content active" : "stand-content"}>
                     <div className="title-content">
                         <fieldset className={border ? "radio-btn active" : "radio-btn"} onClick={clickSupport}>                           
-                            <label>
-                                <input className="radio" type="radio" name="support" value="no reward"/>
+                            <label htmlFor="radio1">
+                                <input id="radio1" className="radio" type="radio" name="support" value="no reward"/>
                             </label>
                         </fieldset>
                         <h4 className="title">Pledge with no reward</h4>
@@ -47,8 +47,8 @@ const Project = ({select, clickSelect, sidebar}) => {
                 <section className={bamboo ? "stand-content active" : "stand-content"}>
                     <div className="title-content">
                         <fieldset className={bamboo ? "radio-btn active" : "radio-btn"} onClick={clickBamboo}>
-                            <label>
-                                <input className="radio" name="support" type="radio" value="bamboo stand"/>                          
+                            <label htmlFor="radio2">
+                                <input id="radio2" className="radio" name="support" type="radio" value="bamboo stand"/>                          
                             </label>
                         </fieldset>                       
                         <h4 className="title">Bamboo Stand</h4>
@@ -73,8 +73,8 @@ const Project = ({select, clickSelect, sidebar}) => {
                 <section className={blackEdition ? "stand-content active" : "stand-content"}>
                     <div className="title-content">
                         <fieldset className={blackEdition ? "radio-btn active" : "radio-btn"} onClick={clickBlackEdition}>
-                            <label>
-                                <input className="radio" type="radio" name="support" value="black edition stand"/>
+                            <label htmlFor="radio3">
+                                <input id="radio3" className="radio" type="radio" name="support" value="black edition stand"/>
                             </label>
                         </fieldset>                       
                         <h4 className="title">Black Edition Stand</h4>
