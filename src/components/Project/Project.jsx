@@ -24,17 +24,17 @@ const Project = ({select, clickSelect, sidebar}) => {
     }
     return (
         <>
-            <div className={select ? "project-container active" : "project-container"} aria-label="project-container">
+            <div className={select ? "project-container active" : "project-container"}>
                 <div className={sidebar ? "close active" : "close"}>
                     <h2>Back this project</h2>
-                    <span onClick={clickSelect}><img src={Close} alt="close icon" aria-pressid="button" role="button"/></span>
+                    <span onClick={clickSelect}><img src={Close} alt="close icon"/></span>
                 </div>
                 <p className="subtitle">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
-                <section className={border ? "stand-content active" : "stand-content"} aria-label="stand-content">
+                <section className={border ? "stand-content active" : "stand-content"}>
                     <div className="title-content" aria-label="title-content">
                         <div className={border ? "radio-btn active" : "radio-btn"} onClick={clickSupport}>                           
                             <label>
-                                <input className="radio" type="radio" name="support" value="no reward" aria-checked="checkbox" role="checkbox"/>
+                                <input className="radio" type="radio" name="support" value="no reward"/>
                             </label>
                         </div>
                         <h4 className="title">Pledge with no reward</h4>
@@ -44,11 +44,11 @@ const Project = ({select, clickSelect, sidebar}) => {
                             you will be signed up to receive product updates via email.</p>
                     </div>
                 </section>
-                <section className={bamboo ? "stand-content active" : "stand-content"} aria-label="stand-content">
+                <section className={bamboo ? "stand-content active" : "stand-content"}>
                     <div className="title-content" aria-label="title-content">
                         <div className={bamboo ? "radio-btn active" : "radio-btn"} onClick={clickBamboo}>
                             <label>
-                                <input className="radio" name="support" type="radio" value="bamboo stand" aria-checked="checkbox" role="checkbox"/>                          
+                                <input className="radio" name="support" type="radio" value="bamboo stand"/>                          
                             </label>
                         </div>                       
                         <h4 className="title" aria-label="title">Bamboo Stand</h4>
@@ -62,51 +62,51 @@ const Project = ({select, clickSelect, sidebar}) => {
                     <div className="description" aria-label="description">
                         <p className="stock"><span className="stock-number">101</span> left</p>
                     </div>
-                    <div className={bamboo ? "btn-description active" : "btn-description"} aria-label="btn-description">
+                    <div className={bamboo ? "btn-description active" : "btn-description"}>
                         <p className="enter-pledge">Enter your pledge</p>
-                        <div className="btn-container" aria-label="btn-container">
-                            <button className="pledge-btn" role="button">$25</button>
-                            <button onClick={clickSupport} className="stand-btn" role="button">Continue</button>
+                        <div className="btn-container">
+                            <button className="pledge-btn">$25</button>
+                            <button onClick={clickSupport} className="stand-btn">Continue</button>
                         </div>
                     </div>
                 </section>
-                <section className={blackEdition ? "stand-content active" : "stand-content"} aria-label="stand-content">
+                <section className={blackEdition ? "stand-content active" : "stand-content"}>
                     <div className="title-content">
                         <div className={blackEdition ? "radio-btn active" : "radio-btn"} onClick={clickBlackEdition}>
                             <label>
-                                <input className="radio" type="radio" name="support" value="black edition stand" aria-checked="checkbox" role="checkbox"/>
+                                <input className="radio" type="radio" name="support" value="black edition stand"/>
                             </label>
                         </div>                       
-                        <h4 className="title" aria-label="title">Black Edition Stand</h4>
+                        <h4 className="title">Black Edition Stand</h4>
                         <p className="pledge">Pledge $75 or more</p>
                         <p className="mobile-none"><span className="number">64</span> left</p>
                     </div>
-                    <div className="description" aria-label="description">
+                    <div className="description">
                         <p className="description-text">You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
                             member list. Shipping is included.</p>
                     </div>
-                    <div className="description" aria-label="description">
+                    <div className="description">
                         <p className="stock"><span className="stock-number">64</span> left</p>
                     </div>
-                    <div className={blackEdition ? "btn-description active" : "btn-description"} aria-label="btn-description">
+                    <div className={blackEdition ? "btn-description active" : "btn-description"}>
                         <p className="enter-pledge">Enter your pledge</p>
                         <div className="btn-container">
                             <button className="pledge-btn" role="button">$75</button>
-                            <button onClick={clickSupport} className="stand-btn" role="button">Continue</button>
+                            <button onClick={clickSupport} className="stand-btn">Continue</button>
                         </div>
                     </div>
                 </section>
-                <section className="stand-content mahogany" aria-label="stand-content">
-                    <div className="title-content" aria-label="title-content">
+                <section className="stand-content mahogany">
+                    <div className="title-content">
                         <h4 aria-label="title">Mahogany Special Edition</h4>
                         <p className="pledge">Pledge $200 or more</p>
                         <p className="mobile-none"><span className="number">0</span> left</p>
                     </div>
-                    <div className="description" aria-label="description">
+                    <div className="description">
                         <p>You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
                             to our Backer member list. Shipping is included.</p>
                     </div>
-                    <div className="description" aria-label="description">
+                    <div className="description">
                         <p className="stock"><span className="stock-number">0</span> left</p>
                     </div>
                 </section>
