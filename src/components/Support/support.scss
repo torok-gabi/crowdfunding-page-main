@@ -24,7 +24,8 @@
         background-color: $buttons;
         padding: .8rem 2rem;
         border-radius: 2rem;
-        color: white;
+        color: $mainFont;
+        text-shadow: 1px 1px 1px rgb(133, 132, 132);
         border: none;
         font-size: 1.2rem;
         cursor: pointer;
@@ -35,6 +36,8 @@
     .support-btn:active {
         background-color: $hoverButtons;
         outline: none;
+        text-shadow: 1px 1px 1px $mainFont;
+        color: white;
     }
 }
 

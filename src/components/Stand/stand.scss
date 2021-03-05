@@ -29,20 +29,22 @@
             font-weight: bold;
         }
         .stand-btn {
-            max-width: 15rem;
+            max-width: 50%;
             background-color: $buttons;
-            padding: .8rem 2rem;
+            padding: 1rem;
             border-radius: 2rem;
-            color: white;
             border: none;
             font-size: 1.2rem;
-            text-shadow: 2px 2px 1px $mainFont;
+            color: $mainFont;
+            text-shadow: 1px 1px 1px rgb(133, 132, 132);
             letter-spacing: 1.1px;
             font-weight: bold;
             cursor: pointer;
         }
         .stand-btn:hover {
             background-color: $hoverButtons;
+            text-shadow: 1px 1px 1px $mainFont;
+            color: white;
         }
         .stand-btn:active,
         .stand-btn:focus {
@@ -52,13 +54,15 @@
     .mahogany {
         opacity: .4;
         .outOf-btn {
-            padding: .8rem 2rem;
+            padding: 0.5rem 1.5rem;
             border-radius: 2rem;
             font-size: 1.2rem;
+            font-weight: bold;
             cursor: pointer;
-            max-width: 15rem;
+            max-width: 50%;
             background-color: $mainFont;
             color: white;
+            text-shadow: 1px 0px 0px rgb(133, 132, 132);
             border: none;
         }
     }

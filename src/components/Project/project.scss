@@ -103,15 +103,17 @@
                     height: 3rem;
                     background-color: $buttons;
                     border-radius: 2rem;
-                    color: white;
                     border: none;
                     font-size: 1.1rem;
-                    text-shadow: 2px 2px 1px $mainFont;
+                    color: $mainFont;
+                    text-shadow: 1px 1px 1px rgb(133, 132, 132);
                     letter-spacing: 1.1px;
                     font-weight: bold;
                     cursor: pointer;
                     &:hover {
                         background-color: $hoverButtons;
+                        text-shadow: 1px 1px 1px $mainFont;
+                        color: white;
                     }
                 }
             }
